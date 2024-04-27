@@ -7,7 +7,7 @@
 body{
     width: 100vw;
     height: 100vh;
-   background-image: url('image.jpg');
+    background-image: url('image.jpg');
     display: grid;
     place-items: center;
 }
@@ -53,4 +53,16 @@ select{
 }
 #resultcontainer{
     font-size: 35px;
+}
+#resetBtn {
+    background-color: rgb(102, 59, 142);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#resetBtn:hover {
+    background-color: rgb(80, 45, 105);
 }

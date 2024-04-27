@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>TEMPERATURE CONVERTER</h1>
+    <h1>TEMPERATURE CONVERTER</h1>
     <form id="tempcalc" onsubmit="calculatetemp(); return false">
 
         <label for="temp">Please enter the temperature you want to convert</label><br/>
@@ -15,16 +15,18 @@
         
         <select name="temp_diff" id="temp_diff">
             <option value="cel">°Celsius</option>
-            <option value="fah">°Faherenheit</option>
+            <option value="fah">°Fahrenheit</option>
             <option value="kel">°Kelvin</option>
-
         </select><br/>
         <input type="submit" name="temp" value="SUBMIT">
         <br />
-            <span id="resultcontainer"></span>
+        <span id="resultcontainer"></span>
+        <div id="resetContainer" style="display: none;">
+            <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+        </div>
     </form>
     <script src="script.js">
-        
+       
     </script>
     
     

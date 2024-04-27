@@ -35,4 +35,15 @@ const calculatetemp = () => {
         result = ktoc(numbertemp);
         document.getElementById("resultcontainer").innerHTML = `${result[0]}°Celsius and ${result[1]}°Fahrenheit`;
     }
+
+    document.getElementById("resetContainer").style.display = "block";
+    document.getElementById("tempcalc").style.height = "50vh";
+}
+
+const resetForm = () => {
+   
+    document.getElementById("tempcalc").reset();
+    document.getElementById("resultcontainer").innerHTML = "";
+    document.getElementById("resetContainer").style.display = "none";
+    document.getElementById("tempcalc").style.height = "45vh";
 }
